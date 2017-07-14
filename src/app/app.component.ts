@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  //quotes that used to be here are now in QuoteListComponent
 }

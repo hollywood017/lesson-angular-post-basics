@@ -1,0 +1,13 @@
+<h2> Quote List </h2>
+<ul>
+  <li *ngFor="let oneQuote of allTheQuotes">
+    <!-- "onQuoteDelete" is the name of the child's output
+          "$event" has to be literally called "$event" -->
+          <app-quote-item
+            (onQuoteDelete)="doSomething($event)"
+            [quoteInfo]="oneQuote"></app-quote-item>
+  <!--           |           |
+                 |           ===========Value that we want to send in from the parent
+            Name of the Input inside the child-->
+</li>
+</ul>
